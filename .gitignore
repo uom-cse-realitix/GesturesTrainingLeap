@@ -1,0 +1,5 @@
+# Data folders
+data/
+data_backup/
+.ipynb_checkpoints/
+.idea/
