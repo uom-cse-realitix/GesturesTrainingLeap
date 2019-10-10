@@ -1,7 +1,7 @@
 import numpy as np
 import os
 
-vectors = np.genfromtxt("vectors.csv", delimiter=",")
+vectors = np.genfromtxt("vectors_v2.csv", delimiter=",")
 label_map = {
     "Pointing": 0,
     "Capture": 1,
@@ -42,5 +42,5 @@ np.random.shuffle(data)
 input_x_final = data[:, :input_x.size // len(input_x)].reshape(input_x.shape)
 input_y_final = data[:, input_x.size // len(input_x):].reshape(input_y.shape)
 print("Saving the dataset...")
-np.savetxt("gesture_input_x_v4.csv", input_x_final)
-np.savetxt("gesture_input_y_v4.csv", input_y_final)
+np.savetxt("gesture_input_x_v6.csv", input_x_final)
+np.savetxt("gesture_input_y_v6.csv", input_y_final)
